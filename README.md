@@ -152,6 +152,10 @@ Escalations have been resolved successfully!
 Escalation status:
 - [iamjakethehuman](https://github.com/sherlock-audit/2023-05-ironbank-judging/issues/361/#issuecomment-1608985592): rejected
 
+**IAm0x52**
+
+Fix looks good. Msg.value is now cached allowing it to be preserved across contexts 
+
 # Issue M-1: PriceOracle.getPrice doesn't check for stale price 
 
 Source: https://github.com/sherlock-audit/2023-05-ironbank-judging/issues/9 
@@ -256,6 +260,10 @@ Escalation status:
 Hi @hrishibhat @sherlock-admin 
 I believe my issue has been omitted
 https://github.com/sherlock-audit/2023-05-ironbank-judging/issues/471#issue-1751647942
+
+**jacksanford1**
+
+Issue was labeled "Won't Fix" by protocol team. Categorizing as an acknowledged issue. 
 
 # Issue M-2: PriceOracle will use the wrong price if the Chainlink registry returns price outside min/max range 
 
@@ -380,7 +388,11 @@ Escalation status:
 How do you establish a reasonable minimum and maximum price range for each asset? 
 The incident related to Venus that you mentioned was caused by the inherent risk of the LUNA token itself. Evaluating the risk associated with an asset should always be taken into account when listing it. I disagree with relying solely on manual human input for setting the price range, as it does not address the underlying issue faced by Venus. Therefore, we will not make changes to address this matter.
 
-# Issue M-3: [M-1] Price Oracle contract does not work in Arbitrum and Optimism 
+**jacksanford1**
+
+Issue was labeled "Won't Fix" by protocol team. Categorizing as an acknowledged issue. 
+
+# Issue M-3: Price Oracle contract does not work in Arbitrum and Optimism 
 
 Source: https://github.com/sherlock-audit/2023-05-ironbank-judging/issues/191 
 
@@ -493,6 +505,10 @@ Escalations have been resolved successfully!
 Escalation status:
 - [thangtranth](https://github.com/sherlock-audit/2023-05-ironbank-judging/issues/191/#issuecomment-1606130613): accepted
 
+**jacksanford1**
+
+Issue was labeled "Won't Fix" by protocol team. Categorizing as an acknowledged issue. 
+
 # Issue M-4: Wrong Price will be Returned When Asset is PToken for WstETH 
 
 Source: https://github.com/sherlock-audit/2023-05-ironbank-judging/issues/220 
@@ -595,6 +611,10 @@ Escalations have been resolved successfully!
 
 Escalation status:
 - [bzpassersby](https://github.com/sherlock-audit/2023-05-ironbank-judging/issues/220/#issuecomment-1608105417): accepted
+
+**IAm0x52**
+
+Fix looks good. PTokens now always use their underlying token when determining their price
 
 # Issue M-5: getPriceFromChainlink() doesn't check If Arbitrum sequencer is down in Chainlink feeds 
 
